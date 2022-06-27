@@ -12,6 +12,11 @@ public class UserService implements IUserService {
 
     @Override
     public List<User> findAll() {
-        return (List<User>) userService.findAll();
+        return userService.findAll();
+    }
+
+    @Override
+    public void saveUser(String name) {
+        userService.saveUser(name);
     }
 }
