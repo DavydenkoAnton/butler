@@ -12,6 +12,7 @@ public class UserService implements IUserService {
 
     @Override
     public List<User> findAll() {
+        int x;
         return userService.findAll();
     }
 
