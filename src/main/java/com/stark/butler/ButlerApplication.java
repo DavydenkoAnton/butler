@@ -3,7 +3,7 @@ package com.stark.butler;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-// git token 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
+// git token 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
 @SpringBootApplication
 public class ButlerApplication {
 
@@ -11,5 +11,4 @@ public class ButlerApplication {
 		SpringApplication.run(ButlerApplication.class, args);
 	}
 
-//gggg
 }
