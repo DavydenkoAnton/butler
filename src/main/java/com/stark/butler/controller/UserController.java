@@ -1,5 +1,5 @@
 package com.stark.butler.controller;
-import com.stark.butler.model.entity.User;
+import com.stark.butler.entity.User;
 import com.stark.butler.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
