@@ -55,7 +55,7 @@ public class User {
             return false;
         }
 
-        User user=(User)obj;
+        User user = (User) obj;
         if (!this.name.equals(user.name)) {
             return false;
         }

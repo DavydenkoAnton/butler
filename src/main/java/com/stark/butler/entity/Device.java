@@ -1,10 +1,10 @@
-package com.stark.butler.model.entity;
+package com.stark.butler.entity;
 
 import javax.persistence.*;
 
 @Entity
-@Table(name = "users")
-public class User {
+@Table(name = "devices")
+public class Device {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -12,11 +12,10 @@ public class User {
     @Column(name = "name")
     private String name;
 
-    public User() {
+    public Device() {
     }
 
-    public User(Integer id, String name) {
-        this.id = id;
+    public Device(String name) {
         this.name = name;
     }
 
@@ -55,15 +54,15 @@ public class User {
             return false;
         }
 
-        User user=(User)obj;
-        if (!this.name.equals(user.name)) {
+        Device device = (Device) obj;
+        if (!this.name.equals(device.name)) {
             return false;
         }
-        return this.id.equals(user.id);
+        return this.id.equals(device.id);
     }
 
     @Override
     public String toString() {
-        return "User id:" + this.id + ", name: " + this.name;
+        return "Device id:" + this.id + ", name: " + this.name;
     }
 }
