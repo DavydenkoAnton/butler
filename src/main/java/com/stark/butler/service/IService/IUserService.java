@@ -1,6 +1,6 @@
-package com.stark.butler.service;
+package com.stark.butler.service.IService;
 
-import com.stark.butler.model.bean.User;
+import com.stark.butler.model.entity.User;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;

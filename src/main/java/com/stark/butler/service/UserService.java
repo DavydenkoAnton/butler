@@ -1,6 +1,7 @@
 package com.stark.butler.service;
 
-import com.stark.butler.model.bean.User;
+import com.stark.butler.model.entity.User;
+import com.stark.butler.service.IService.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;

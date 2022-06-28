@@ -1,4 +1,4 @@
-package com.stark.butler.model.bean;
+package com.stark.butler.model.entity;
 
 import javax.persistence.*;
 
