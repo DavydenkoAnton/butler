@@ -16,8 +16,7 @@ public class UserService implements IUserService {
     }
 
     @Override
-    public void saveUser(String name) {
-        userService.saveUser(name);
-        userService.saveUser(name);
+    public void saveUserByName(String name) {
+        userService.saveUserByName(name);
     }
 }

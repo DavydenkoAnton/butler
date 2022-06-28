@@ -1,6 +1,6 @@
 package com.stark.butler.controller;
-import com.stark.butler.dao.UserRepository;
 import com.stark.butler.model.bean.User;
+import com.stark.butler.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -15,17 +15,18 @@ public class UserController {
 
 
     @GetMapping("/users")
-    public List<User> index(){
-        return userRepository.findAll();
+    public List<User> getUsers(){
+        return (List<User>) userRepository.findAll();
     }
 
+    /*
     @GetMapping("/user/{id}")
     public Optional<User> show(@PathVariable String id){
         Integer userId = Integer.parseInt(id);
         return userRepository.findById(userId);
     }
 
-    /*
+
     @PostMapping("/blog/search")
     public List<Blog> search(@RequestBody Map<String, String> body){
         String searchTerm = body.get("text");
